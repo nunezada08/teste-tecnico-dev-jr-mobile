@@ -9,22 +9,55 @@ export default function App() {
             </View>
             <View style={styles.main}>
                 <View style={styles.secaoHabilidade}>
-                    <Image
-                        source={require('../assets/JavaScript-logo.png')}
-                        style={{
-                            width: 120,
-                            height: 120,
-                            borderRadius: 15,
-                            marginTop: 60,
-                        }}></Image>
-                    <Image
-                        source={require('../assets/react-js.png')}
-                        style={{
-                            width: 120,
-                            height: 120,
-                            borderRadius: 15,
-                            marginTop: 60,
-                        }}></Image>
+                    <View style={styles.linhaHabilidade}>
+                        <Image
+                            source={require('../assets/JavaScript-logo.png')}
+                            style={{
+                                width: 100,
+                                height: 100,
+                                borderRadius: 15,
+                                marginTop: 60,
+                            }}></Image>
+                        <Image
+                            source={require('../assets/react-js.png')}
+                            style={{
+                                width: 100,
+                                height: 100,
+                                borderRadius: 15,
+                                marginTop: 60,
+                            }}></Image>
+
+                        <Image
+                            source={{
+                                uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtlp_KBiJxmSfZOQTPQwzVgtrRoI4qJChhjQ&s',
+                            }}
+                            style={{
+                                width: 100,
+                                height: 100,
+                                borderRadius: 15,
+                                marginTop: 60,
+                            }}></Image>
+                    </View>
+                    <View style={styles.linhaHabilidade}>
+                        <Image
+                            source={{
+                                uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKgl7wpiJVouzQ_6Jgf4zGvIN4uiRsOYOcbQ&s',
+                            }}
+                            style={{
+                                width: 100,
+                                height: 100,
+                                borderRadius: 15,
+                                marginTop: 60,
+                            }}></Image>
+                        <Image
+                            source={require('../assets/react-js.png')}
+                            style={{
+                                width: 100,
+                                height: 100,
+                                borderRadius: 15,
+                                marginTop: 60,
+                            }}></Image>
+                    </View>
                 </View>
             </View>
 
@@ -39,7 +72,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#0F172A',
     },
     header: {
-        padding: 30,
+        padding: 20,
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -55,7 +88,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     secaoHabilidade: {
+        backgroundColor: '#1E293B',
+        borderRadius: 20,
+        width: 380,
+        borderRadius: 20,
+        height: 370
+    },
+    linhaHabilidade: {
+        display: 'flex',
         flexDirection: 'row',
-        gap: 30
+        justifyContent: 'space-around'
     }
 });

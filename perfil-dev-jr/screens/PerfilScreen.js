@@ -6,8 +6,16 @@ export default function App() {
         <View style={styles.container}>
             <View style={styles.header}>
                 <Image
-                    source={require('../assets/fotoNunes.jpg')}
-                    style={{ width: 200, height: 200, borderRadius: 100, marginTop: 60 }}></Image>
+                    source={{
+                        uri: 'https://avatars.githubusercontent.com/u/202629276?v=4',
+                    }}
+                    style={{
+                        width: 200,
+                        height: 200,
+                        borderRadius: 100,
+                        marginTop: 60,
+                    }}
+                />
                 <Text style={styles.nome}>Vitor Francisco Nunes</Text>
                 <Text style={styles.cargo}>Estudante de DS - SENAI</Text>
             </View>
@@ -25,7 +33,8 @@ export default function App() {
                         </Text>
                     </View>
                     <View style={styles.textoSobreMim}>
-                        <Text style={{
+                        <Text
+                            style={{
                                 color: '#fff',
                                 fontSize: 18,
                                 marginLeft: 20,
@@ -84,6 +93,6 @@ const styles = StyleSheet.create({
     },
     textoSobreMim: {
         flex: 1,
-        borderRadius: 15
-    }
+        borderRadius: 15,
+    },
 });
